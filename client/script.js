@@ -80,8 +80,9 @@ const handleSubmit=async (e)=>{
   loader(messageDiv);
 
   //fetch from a server
-
-  const response = await fetch('http://localhost:5000',{
+  const URL="https://chat-ai-api.onrender.com/"; 
+  
+  const response = await fetch(URL,{
     method:'POST',
     headers:{
       'Content-Type':'application/json'
